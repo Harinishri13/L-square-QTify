@@ -30,8 +30,9 @@ const Navbar = ({ data, page, songsData }) => {
         <Feedback onClose={() => setIsFeedbackClicked(false)} />
       )}
       <nav className={styles.nav}>
-        <Logo />
-        <Search data={page === "home" ? data : songsData} page={page} />
+        <div> <Logo /></div>
+       <div>  <Search data={page === "home" ? data : songsData} page={page} /></div>
+      
         <Button
           text="GIVE FEEDBACK"
           eventHandler={{ event: "onClick", handler: handleClick }}
