@@ -32,11 +32,11 @@ const Navbar = ({ data, page, songsData }) => {
       <nav className={styles.nav}>
         <div> <Logo /></div>
        <div>  <Search data={page === "home" ? data : songsData} page={page} /></div>
-      
-        <Button
+      <div>        <Button
           text="GIVE FEEDBACK"
           eventHandler={{ event: "onClick", handler: handleClick }}
-        />
+        /></div>
+
       </nav>
     </>
   );
