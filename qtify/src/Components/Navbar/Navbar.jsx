@@ -33,7 +33,7 @@ const Navbar = ({ data, page, songsData }) => {
         <div> <Logo /></div>
        <div>  <Search data={page === "home" ? data : songsData} page={page} /></div>
       <div>        <Button
-          text="GIVE FEEDBACK"
+          text="Give Feedback"
           eventHandler={{ event: "onClick", handler: handleClick }}
         /></div>
 
