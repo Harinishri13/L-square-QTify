@@ -28,8 +28,9 @@ const AlbumSongsPage = () => {
   return (
     <div>
       <Navbar songsData={songs} page={"song"} />
-      <SongsHero album={clickedAlbum} />
-      <SongsTable album={clickedAlbum} />
+      <div> <SongsHero album={clickedAlbum} /></div>
+     <div> <SongsTable album={clickedAlbum} /></div>
+     
     </div>
   );
 };
